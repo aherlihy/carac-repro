@@ -1,0 +1,3 @@
+# Hack to get empty dir to stick around in git
+*
+!.gitignore
