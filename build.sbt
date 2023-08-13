@@ -9,9 +9,10 @@ scalacOptions ++= Seq("-deprecation", "-feature")
 
 lazy val root = project.in(file("."))
   .enablePlugins(PackPlugin)
+  .enablePlugins(BuildInfoPlugin)
   .settings(
     name := "datalog",
-
+    buildInfoKeys := Seq[BuildInfoKey](baseDirectory),
     libraryDependencies ++= Seq(
       "org.scala-lang" %% "scala3-staging" % scalaVersion.value,
       "org.glavo" % "classfile" % "0.4.0", // Copy of jdk.internal.classfile, won't be necessary when https://openjdk.org/jeps/8280389 is done.
