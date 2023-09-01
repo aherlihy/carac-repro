@@ -40,10 +40,10 @@ cat <benchmark_out>.csv | sed -e 's/"datalog\.benchmarks\.examples\.\([^\.]*\)\.
 ```
 
 ## Importing into excel
-The excel file used to generate results is "Carac-Experiments.xlsx", import the data and the charts should auto-generate.
+The excel file used to generate results is "Carac-Experiments-Repro.xlsx", import the data and the charts should auto-generate.
 Don't be worried if it freezes when you paste the data in, at least on my machine it can take a few minutes for the charts to populate.
 Steps:
-1) Open Carac-Experiments.xlsx with Excel Version 16.76 (23081101)
+1) Open Carac-Experiments-Repro.xlsx with Excel Version 16.76 (23081101)
 2) Add an empty sheet to import the data into (right-click the tab at the bottom that says "aug-13-all-fpj FIGURES" and click "insert sheet").
 3) In that new sheet, nagivate to "Data > Get Data (Power Query) > From Text (Legacy) > select the <benchmark_out>_clean.csv 
 file produced by the section above > "Get Data"
@@ -114,7 +114,7 @@ cat results/$2$1.csv | sed -e 's/"datalog\.benchmarks\.BenchCLI_\([^\.]*\)\./\1_
 
 ## Importing into excel
 Steps:
-1) Open Carac-Experiments.xlsx with Excel Version 16.76 (23081101)
+1) Open Carac-Experiments-Repro.xlsx with Excel Version 16.76 (23081101)
 2) Add an empty sheet to import the data into (right-click the tab at the bottom that says "sota-compare" and click "insert sheet").
 3) In that new sheet, import the data in the same way as the previous section. 
 4) Select and copy the data
