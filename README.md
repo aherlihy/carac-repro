@@ -123,3 +123,9 @@ Steps:
    data, if not you may need to right click "refresh" on the charts themselves.
 
 If there are any questions or problems running the benchmark you can always contact me at herlihyap at gmail and I will do my best to clarify.
+
+# Macro benchmarks
+```shell
+$ git checkout macro-bench
+$ nohup sbt -java-home <path-to-jdk>jdk-17.0.2 "bench/Jmh/run Macro -e Slow -rff benchmark_out.csv"
+```
