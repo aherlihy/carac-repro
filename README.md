@@ -1,6 +1,6 @@
 # CARAC: Adative Metaprogramming in Scala Reproducibility
 
-# Experimental Setup Section 9.2 (Online Optimization Speedup)
+# Experimental Section (Online Optimization Speedup)
 Experiments in this section are run on Intel(R) Xeon(R) Gold 5118 CPU @ 2.30GHz (2 x 12-core) with 395GB RAM, 
 on Ubuntu 18.04.5 LTS with Linux kernel 4.15.0-151-generic (44) and Scala 3.3.1-RC4. The JVM used is OpenJDK 64-Bit Server VM (build 17.0.2+8-86, mixed mode, sharing)
 and OpenJDK Runtime Environment (build 17.0.2+8-86) and SBT 1.8.2.
@@ -61,7 +61,7 @@ if the ratio is close to 1. However, if the machine was running on battery power
 same time then there could be larger error scores that interfere with the measurements. There shouldn't be more than a few 
 red boxes.
 
-# Experimental Setup Section 9.3 (Comparison with State-of-the-Art)
+# Experimental Setup Section (Comparison with State-of-the-Art)
 Experiments are run on Intel(R) Xeon(R) Gold 5118 CPU @ 2.30GHz (2 x 12-core) with 395GB RAM,
 on Ubuntu 22.04 LTS with Linux kernel 5.15.0-27-generic (46) and Scala 3.3.1-RC4. The JVM used is Java HotSpot(TM) 
 64-Bit Server VM Oracle GraalVM 17.0.8+9.1 (build 17.0.8+9-LTS-jvmci-23.0-b14, mixed mode, sharing) and SBT 1.8.2. 
